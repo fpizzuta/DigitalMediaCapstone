@@ -1,0 +1,25 @@
+{
+  "name": "digitalmediacapstone",
+  "version": "1.0.0",
+  "description": "capstone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "start-dev": "nodemon --inspect ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpizzuta/DigitalMediaCapstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpizzuta/DigitalMediaCapstone/issues"
+  },
+  "homepage": "https://github.com/fpizzuta/DigitalMediaCapstone#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0"
+  }
+}
