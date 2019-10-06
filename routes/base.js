@@ -1,6 +1,14 @@
 module.exports = function (io) {
 
     io.on('connection', function(socket){
-        console.log('a user connected');
-      });
+        socket.on('chat message', function(msg){
+          console.log('message: ' + msg);
+        });
+    });
+
+    io.on('master', function(socket){
+        socket.emit('master','You lose Doctor!');
+        console.log('Master emitted');
+    });
+
 }
