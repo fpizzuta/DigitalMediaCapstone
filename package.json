@@ -20,6 +20,7 @@
   "homepage": "https://github.com/fpizzuta/DigitalMediaCapstone#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "socket.io": "^2.3.0"
   }
 }
