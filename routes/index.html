@@ -6,6 +6,7 @@
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
+      #master { content:url('/themaster.jpg');  max-width:100%; max-height:100vh; margin:auto;}
       form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
       form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
       form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
@@ -15,6 +16,7 @@
     </style>
   </head>
   <body>
+    <img id='master'>
     <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
@@ -34,7 +36,7 @@
             $('#messages').append($('<li>').text(msg));
           });
           socket.on('master', function(msg){
-            $('#messages').append($('<li>').text(msg));
+            $('#master').toggle();
           });
         });
       </script>

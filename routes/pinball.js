@@ -8,6 +8,7 @@ var io = require('./base.js');
 router.post('/', (req, res, next)=>{
  console.log('/drwho requested');
  req.app.io.emit('master','You lose Doctor!');
+ res.end();
  
 });
 

@@ -1,8 +1,10 @@
+process.env.PWD = process.cwd()
 const express = require('express')
 const app = express()
 
 var pinball = require('./routes/pinball');
 
+app.use(express.static(process.env.PWD + '/img'));
 app.use('/drwho',pinball);
 
 
