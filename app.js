@@ -4,6 +4,8 @@ const app = express()
 
 var pinball = require('./routes/pinball');
 
+
+app.locals.lightsOn = 0;
 app.use(express.static(process.env.PWD + '/img'));
 app.use('/drwho',pinball);
 
